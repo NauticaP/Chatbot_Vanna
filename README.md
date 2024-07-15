@@ -1,6 +1,6 @@
 # Chatbot con Vanna AI
 
-Este chatbot interactivo permite a los usuarios hacer preguntas sobre sus datos y obtener respuestas utilizando consultas SQL. Puedes configurar qué elementos deseas mostrar en las respuestas, como el código SQL, tablas de datos, código de Plotly para gráficos, gráficos generados, resúmenes de datos y preguntas de seguimiento. La base de datos es enviada a la app mediante una URL.
+Este chatbot interactivo permite a los usuarios hacer preguntas sobre sus datos y obtener respuestas utilizando consultas SQL. Puedes configurar qué elementos deseas mostrar en las respuestas, como el código SQL, tablas de datos, código de Plotly para gráficos, gráficos generados, resúmenes de datos y preguntas de seguimiento. Se conecta a tu base de datos en PostgreSQL.
 
 ## Requisitos
 
@@ -26,7 +26,7 @@ Este chatbot interactivo permite a los usuarios hacer preguntas sobre sus datos 
 
   1. Ejecuta la aplicación:  
   ```bash
-  streamlit run chatbot_vanna.py
+  streamlit run chatbot_1.3.py
   ```
   2. Ingresa una pregunta sobre tus datos en el campo de chat.
 
@@ -36,6 +36,6 @@ Este chatbot interactivo permite a los usuarios hacer preguntas sobre sus datos 
 
 ## Archivos
 
-- `chatbot_vanna.py`: El script principal que configura y ejecuta la aplicación de chatbot.
-- `llamadas_vanna.py`: Este código crea el chatbot interactivo que utiliza la librería Vanna para generar preguntas y consultas SQL a partir de preguntas en lenguaje natural sobre datos alojados en una base de datos SQLite.
-- `vanna_api_key.py`: Contiene las funciones para invocar la solicitud de la API key.
+- `chatbot_1.3.py`: El script principal que configura y ejecuta la aplicación de chatbot.
+- `llamadas_1.3.py`: Este código crea el chatbot interactivo que utiliza la librería Vanna para generar preguntas y consultas SQL a partir de preguntas en lenguaje natural sobre datos alojados en una base de datos SQLite.
+
