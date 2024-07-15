@@ -1,7 +1,7 @@
 import psycopg2
 from psycopg2 import OperationalError
 
-def create_connection(db_name="Crimen_Car_Security", db_user="postgres", db_password="1234", db_host="localhost", db_port="5432"):
+def create_connection(db_name="database", db_user="user", db_password="password", db_host="host", db_port="port"):
     connection = None
     try:
         connection = psycopg2.connect(
