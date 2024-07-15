@@ -5,7 +5,7 @@ from psycopg2 import OperationalError
 
 
 @st.cache_resource(ttl=3600)
-def create_connection(db_name="Crimen_Car_Security", db_user="postgres", db_password="1234", db_host="localhost", db_port="5432"):
+def create_connection(db_name="database", db_user="user", db_password="password", db_host="host", db_port="port"):
     connection = None
     try:
         connection = psycopg2.connect(
@@ -29,8 +29,8 @@ def create_connection(db_name="Crimen_Car_Security", db_user="postgres", db_pass
 
 @st.cache_resource(ttl=3600)
 def setup_vanna():
-    api_key = '0cc56619601643e1b3831519a35abdc5'
-    model = 'nauticap'
+    api_key = 'api_Key'
+    model = 'Vanna Model'
 
     # Crea la conexion a la base de datos usando psycopg2
     connection = create_connection()
