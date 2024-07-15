@@ -8,9 +8,9 @@ from vanna.remote import VannaDefault
 #La función está decorada con @st.cache_resource(ttl=3600), lo que significa que los resultados se cachearán durante una hora para mejorar el rendimiento.
 @st.cache_resource(ttl=3600)
 def setup_vanna():
-    api_key = '0cc56619601643e1b3831519a35abdc5'
-    vn = VannaDefault(api_key=api_key, model='nauticap')
-    vn.connect_to_postgres(host='localhost', dbname='Crimen_Car_Security', user='postgres', password='1234', port='5432')
+    api_key = 'api_key'
+    vn = VannaDefault(api_key=api_key, model='Vanna model')
+    vn.connect_to_postgres(host='host', dbname='database', user='user', password='password', port='port')
     return vn
 
 
